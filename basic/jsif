@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <script type="text/javascript">
+    function checkEven(){
+      var v = document.getElementById('number').value;
+      var r = document.getElementById('result');
+      if(isNaN(v)){
+        r.textContent = v + "は数字ではありません";
+      }else{
+        r.textContent = v + "は数字です";
+      }
+    }
+  </script>
+  </head>
+  <body>
+    <input id="number"/>
+    <button onclick="checkEven()">入力判定</button>
+    <p id="result"></p>
+  </body>
+</html>
