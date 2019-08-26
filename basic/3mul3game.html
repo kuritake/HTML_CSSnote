@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>〇×ゲーム</title>
+  <style media="screen">
+    .cell{
+      width:100px;height:100px;
+      font-size:60px; text-align:center;
+    }
+  </style>
+  <script type="text/javascript">
+    var count = 0;
+    function clickMe(e){
+      if(count++ % 2 == 0){
+        e.textContent = "〇";
+      }else{
+        e.textContent = "×";
+      }
+     }
+
+  </script>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td class="cell" onclick="clickMe(this)"></td>
+        <td class="cell" onclick="clickMe(this)"></td>
+        <td class="cell" onclick="clickMe(this)"></td>
+      </tr>
+      <tr>
+        <td class="cell" onclick="clickMe(this)"></td>
+        <td class="cell" onclick="clickMe(this)"></td>
+        <td class="cell" onclick="clickMe(this)"></td>
+      </tr>
+      <tr>
+        <td class="cell" onclick="clickMe(this)"></td>
+        <td class="cell" onclick="clickMe(this)"></td>
+        <td class="cell" onclick="clickMe(this)"></td>
+      </tr>
+    </table>
+  </body>
+</html>
